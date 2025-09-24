@@ -6,39 +6,139 @@
 <title>Listings - BHARATCOMFORT11</title>
 <link href="https://cdn.jsdelivr.net/npm/tailwindcss@3.3.3/dist/tailwind.min.css" rel="stylesheet">
 </head>
-<body class="font-sans">
+<body class="font-sans bg-gray-50">
 
-<!-- Navbar (reuse from previous code) -->
-
-<div class="p-8">
-  <h1 class="text-3xl font-bold mb-6 text-center">Available Listings</h1>
-  <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
-    <div class="border rounded shadow hover:shadow-lg transition">
-      <img src="images/goa.jpg" alt="Goa Resort" class="w-full h-48 object-cover rounded-t">
-      <div class="p-4">
-        <h2 class="font-bold text-xl">Goa Beach Resort</h2>
-        <p class="text-gray-600">Starts from ₹3,500/night</p>
-        <button class="bg-blue-600 text-white px-4 py-2 mt-2 rounded w-full">Book Now</button>
-      </div>
-    </div>
-    <div class="border rounded shadow hover:shadow-lg transition">
-      <img src="images/manali.jpg" alt="Manali Hotel" class="w-full h-48 object-cover rounded-t">
-      <div class="p-4">
-        <h2 class="font-bold text-xl">Manali Mountain Lodge</h2>
-        <p class="text-gray-600">Starts from ₹2,800/night</p>
-        <button class="bg-blue-600 text-white px-4 py-2 mt-2 rounded w-full">Book Now</button>
-      </div>
-    </div>
-    <div class="border rounded shadow hover:shadow-lg transition">
-      <img src="images/rajasthan.jpg" alt="Rajasthan Palace" class="w-full h-48 object-cover rounded-t">
-      <div class="p-4">
-        <h2 class="font-bold text-xl">Rajasthan Palace Stay</h2>
-        <p class="text-gray-600">Starts from ₹5,000/night</p>
-        <button class="bg-blue-600 text-white px-4 py-2 mt-2 rounded w-full">Book Now</button>
-      </div>
-    </div>
+<!-- Navbar -->
+<nav class="bg-blue-600 text-white p-4 flex justify-between items-center shadow-md sticky top-0 z-50">
+  <div class="font-bold text-2xl hover:text-yellow-300 transition">BHARATCOMFORT11</div>
+  <div class="space-x-4 flex items-center">
+    <a href="index.html" class="hover:text-yellow-300 transition">Home</a>
+    <a href="about.html" class="hover:text-yellow-300 transition">About</a>
+    <a href="bookings.html" class="hover:text-yellow-300 transition">Bookings</a>
+    <a href="listings.html" class="hover:text-yellow-300 transition font-bold">Listings</a>
+    <a href="dashboard-user.html" class="hover:text-yellow-300 transition">User Dashboard</a>
+    <a href="dashboard-partner.html" class="hover:text-yellow-300 transition">Partner Dashboard</a>
+    <button onclick="alert('Login dummy')" class="bg-white text-blue-600 px-4 py-2 rounded shadow hover:bg-gray-100 transition">Login</button>
+    <button onclick="alert('Register dummy')" class="bg-green-600 text-white px-4 py-2 rounded shadow hover:bg-green-700 transition">Register</button>
   </div>
+</nav>
+
+<!-- Page Header -->
+<div class="p-8 text-center">
+  <h1 class="text-4xl font-bold text-gray-800 mb-2">Explore Our Listings</h1>
+  <p class="text-gray-600 text-lg">Find the perfect stay across India</p>
 </div>
+
+<!-- Listings Grid -->
+<section class="p-8">
+  <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+
+    <!-- Listing 1 -->
+    <div class="bg-white border rounded-lg shadow-lg hover:scale-105 transition transform">
+      <img src="images/goa.jpg" alt="Goa Beach Resort" class="w-full h-64 object-cover rounded-t-lg">
+      <div class="p-4">
+        <h3 class="font-bold text-xl mb-1">Goa Beach Resort</h3>
+        <p class="text-gray-600 mb-1">Starting at ₹3,500/night</p>
+        <p class="text-yellow-500 mb-2">⭐⭐⭐⭐☆ (4.2)</p>
+        <button class="bg-blue-600 text-white px-4 py-2 rounded-lg w-full hover:bg-blue-700 transition">Book Now</button>
+      </div>
+    </div>
+
+    <!-- Listing 2 -->
+    <div class="bg-white border rounded-lg shadow-lg hover:scale-105 transition transform">
+      <img src="images/manali.jpg" alt="Manali Mountain Lodge" class="w-full h-64 object-cover rounded-t-lg">
+      <div class="p-4">
+        <h3 class="font-bold text-xl mb-1">Manali Mountain Lodge</h3>
+        <p class="text-gray-600 mb-1">Starting at ₹2,800/night</p>
+        <p class="text-yellow-500 mb-2">⭐⭐⭐⭐☆ (4.0)</p>
+        <button class="bg-blue-600 text-white px-4 py-2 rounded-lg w-full hover:bg-blue-700 transition">Book Now</button>
+      </div>
+    </div>
+
+    <!-- Listing 3 -->
+    <div class="bg-white border rounded-lg shadow-lg hover:scale-105 transition transform">
+      <img src="images/rajasthan.jpg" alt="Rajasthan Palace Stay" class="w-full h-64 object-cover rounded-t-lg">
+      <div class="p-4">
+        <h3 class="font-bold text-xl mb-1">Rajasthan Palace Stay</h3>
+        <p class="text-gray-600 mb-1">Starting at ₹5,000/night</p>
+        <p class="text-yellow-500 mb-2">⭐⭐⭐⭐⭐ (4.8)</p>
+        <button class="bg-blue-600 text-white px-4 py-2 rounded-lg w-full hover:bg-blue-700 transition">Book Now</button>
+      </div>
+    </div>
+
+    <!-- Listing 4 -->
+    <div class="bg-white border rounded-lg shadow-lg hover:scale-105 transition transform">
+      <img src="images/placeholder.jpg" alt="Kerala Backwater Resort" class="w-full h-64 object-cover rounded-t-lg">
+      <div class="p-4">
+        <h3 class="font-bold text-xl mb-1">Kerala Backwater Resort</h3>
+        <p class="text-gray-600 mb-1">Starting at ₹4,200/night</p>
+        <p class="text-yellow-500 mb-2">⭐⭐⭐⭐☆ (4.3)</p>
+        <button class="bg-blue-600 text-white px-4 py-2 rounded-lg w-full hover:bg-blue-700 transition">Book Now</button>
+      </div>
+    </div>
+
+    <!-- Listing 5 -->
+    <div class="bg-white border rounded-lg shadow-lg hover:scale-105 transition transform">
+      <img src="images/placeholder.jpg" alt="Shimla Hills Hotel" class="w-full h-64 object-cover rounded-t-lg">
+      <div class="p-4">
+        <h3 class="font-bold text-xl mb-1">Shimla Hills Hotel</h3>
+        <p class="text-gray-600 mb-1">Starting at ₹3,000/night</p>
+        <p class="text-yellow-500 mb-2">⭐⭐⭐⭐☆ (4.1)</p>
+        <button class="bg-blue-600 text-white px-4 py-2 rounded-lg w-full hover:bg-blue-700 transition">Book Now</button>
+      </div>
+    </div>
+
+    <!-- Listing 6 -->
+    <div class="bg-white border rounded-lg shadow-lg hover:scale-105 transition transform">
+      <img src="images/placeholder.jpg" alt="Udaipur Lake Palace" class="w-full h-64 object-cover rounded-t-lg">
+      <div class="p-4">
+        <h3 class="font-bold text-xl mb-1">Udaipur Lake Palace</h3>
+        <p class="text-gray-600 mb-1">Starting at ₹5,500/night</p>
+        <p class="text-yellow-500 mb-2">⭐⭐⭐⭐⭐ (4.7)</p>
+        <button class="bg-blue-600 text-white px-4 py-2 rounded-lg w-full hover:bg-blue-700 transition">Book Now</button>
+      </div>
+    </div>
+
+    <!-- Listing 7 -->
+    <div class="bg-white border rounded-lg shadow-lg hover:scale-105 transition transform">
+      <img src="images/placeholder.jpg" alt="Rishikesh River View" class="w-full h-64 object-cover rounded-t-lg">
+      <div class="p-4">
+        <h3 class="font-bold text-xl mb-1">Rishikesh River View</h3>
+        <p class="text-gray-600 mb-1">Starting at ₹3,800/night</p>
+        <p class="text-yellow-500 mb-2">⭐⭐⭐⭐☆ (4.4)</p>
+        <button class="bg-blue-600 text-white px-4 py-2 rounded-lg w-full hover:bg-blue-700 transition">Book Now</button>
+      </div>
+    </div>
+
+    <!-- Listing 8 -->
+    <div class="bg-white border rounded-lg shadow-lg hover:scale-105 transition transform">
+      <img src="images/placeholder.jpg" alt="Jaipur Royal Hotel" class="w-full h-64 object-cover rounded-t-lg">
+      <div class="p-4">
+        <h3 class="font-bold text-xl mb-1">Jaipur Royal Hotel</h3>
+        <p class="text-gray-600 mb-1">Starting at ₹4,800/night</p>
+        <p class="text-yellow-500 mb-2">⭐⭐⭐⭐⭐ (4.6)</p>
+        <button class="bg-blue-600 text-white px-4 py-2 rounded-lg w-full hover:bg-blue-700 transition">Book Now</button>
+      </div>
+    </div>
+
+    <!-- Listing 9 -->
+    <div class="bg-white border rounded-lg shadow-lg hover:scale-105 transition transform">
+      <img src="images/placeholder.jpg" alt="Coorg Coffee Estate Stay" class="w-full h-64 object-cover rounded-t-lg">
+      <div class="p-4">
+        <h3 class="font-bold text-xl mb-1">Coorg Coffee Estate Stay</h3>
+        <p class="text-gray-600 mb-1">Starting at ₹3,900/night</p>
+        <p class="text-yellow-500 mb-2">⭐⭐⭐⭐☆ (4.3)</p>
+        <button class="bg-blue-600 text-white px-4 py-2 rounded-lg w-full hover:bg-blue-700 transition">Book Now</button>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- Footer -->
+<footer class="bg-gray-800 text-white p-4 text-center">
+  &copy; 2025 BHARATCOMFORT11. All rights reserved.
+</footer>
 
 </body>
 </html>

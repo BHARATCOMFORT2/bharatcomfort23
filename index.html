@@ -8,19 +8,20 @@
 </head>
 <body class="font-sans">
 
-<nav class="bg-blue-600 text-white p-4 flex justify-between items-center">
-  <div class="font-bold text-xl">BHARATCOMFORT11</div>
+<nav class="bg-blue-600 text-white p-4 flex justify-between items-center shadow-md sticky top-0 z-50">
+  <div class="font-bold text-2xl hover:text-yellow-300 transition">BHARATCOMFORT11</div>
   <div class="space-x-4 flex items-center">
-    <a href="index.html">Home</a>
-    <a href="about.html">About</a>
-    <a href="bookings.html">Bookings</a>
-    <a href="listings.html">Listings</a>
-    <a href="dashboard-user.html">User Dashboard</a>
-    <a href="dashboard-partner.html">Partner Dashboard</a>
-    <button onclick="openLogin()" class="bg-white text-blue-600 px-3 py-1 rounded">Login</button>
-    <button onclick="openRegister()" class="bg-green-600 text-white px-3 py-1 rounded">Register</button>
+    <a href="index.html" class="hover:text-yellow-300 transition">Home</a>
+    <a href="about.html" class="hover:text-yellow-300 transition">About</a>
+    <a href="bookings.html" class="hover:text-yellow-300 transition">Bookings</a>
+    <a href="listings.html" class="hover:text-yellow-300 transition">Listings</a>
+    <a href="dashboard-user.html" class="hover:text-yellow-300 transition">User Dashboard</a>
+    <a href="dashboard-partner.html" class="hover:text-yellow-300 transition">Partner Dashboard</a>
+    <button onclick="openLogin()" class="bg-white text-blue-600 px-4 py-2 rounded shadow hover:bg-gray-100 transition">Login</button>
+    <button onclick="openRegister()" class="bg-green-600 text-white px-4 py-2 rounded shadow hover:bg-green-700 transition">Register</button>
   </div>
 </nav>
+
 
 <script>
 function openLogin() {

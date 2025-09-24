@@ -8,16 +8,29 @@
 </head>
 <body class="font-sans">
 
-  <!-- Navbar -->
-  <nav class="bg-blue-600 text-white p-4 flex justify-between">
-    <div class="font-bold text-xl">BHARATCOMFORT11</div>
-    <div class="space-x-4">
-      <a href="index.html">Home</a>
-      <a href="about.html">About</a>
-      <a href="bookings.html">Bookings</a>
-      <a href="contact.html">Contact</a>
-    </div>
-  </nav>
+<nav class="bg-blue-600 text-white p-4 flex justify-between items-center">
+  <div class="font-bold text-xl">BHARATCOMFORT11</div>
+  <div class="space-x-4 flex items-center">
+    <a href="index.html">Home</a>
+    <a href="about.html">About</a>
+    <a href="bookings.html">Bookings</a>
+    <a href="listings.html">Listings</a>
+    <a href="dashboard-user.html">User Dashboard</a>
+    <a href="dashboard-partner.html">Partner Dashboard</a>
+    <button onclick="openLogin()" class="bg-white text-blue-600 px-3 py-1 rounded">Login</button>
+    <button onclick="openRegister()" class="bg-green-600 text-white px-3 py-1 rounded">Register</button>
+  </div>
+</nav>
+
+<script>
+function openLogin() {
+  alert('Login modal opens (dummy)');
+}
+function openRegister() {
+  alert('Register modal opens (dummy)');
+}
+</script>
+
 
   <!-- Hero Banner -->
   <div class="relative h-96 bg-cover bg-center" style="background-image: url('images/hero.jpg')">
